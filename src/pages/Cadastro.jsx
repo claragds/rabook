@@ -25,16 +25,17 @@ export function Cadastro({ navigation, route }) {
   };
   return (
     <View style={styles.fundo}>
+      <Text style={styles.textCrie}>Crie sua conta:</Text>
       <TextInput
         style={styles.form}
-        placeholder="Digite Seu E-mail:"
+        placeholder="Digite seu E-mail:"
         placeholderTextColor="#000"
         value={email}
         onChangeText={handleEmailChange}
       />
       <TextInput
         style={styles.form}
-        placeholder="Crie uma Senha:"
+        placeholder="Crie uma senha:"
         placeholderTextColor="#000"
         secureTextEntry
         value={senha}
@@ -42,7 +43,7 @@ export function Cadastro({ navigation, route }) {
       />
       <TextInput
         style={styles.form}
-        placeholder="Confirme Sua Senha:"
+        placeholder="Confirme sua senha:"
         placeholderTextColor="#000"
         secureTextEntry
         value={confirmarSenha}
@@ -85,7 +86,14 @@ const styles = StyleSheet.create({
     borderRadius: 22,
     marginVertical: 2,
     fontSize: 15,
-    color: 'white',
+    color: '#000',
+  },
+  textCrie: {
+    fontSize: 42,
+    color: '#000',
+    fontWeight: '900',
+    textAlign: 'center',
+    padding: 26,
   },
   buttonContainer: {
     flexDirection: 'row',

@@ -20,7 +20,7 @@ export function Login({ navigation, route }) {
 
   return (
     <View style={styles.fundoo}>
-      <Text>Tela de login</Text>
+      <Text style={styles.textlogin}>Login</Text>
       <TextInput
         style={styles.form}
         placeholder="Digite seu E-mail:"
@@ -75,6 +75,14 @@ const styles = StyleSheet.create({
     borderRadius: 22,
     fontSize: 15,
     color: '#000',
+  },
+
+  textlogin: {
+    textAlign: 'center',
+    padding: 26,
+    color: '#000',
+    fontSize: 52,
+    fontWeight: '900',
   },
 
   buttonContainer: {

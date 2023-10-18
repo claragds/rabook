@@ -268,7 +268,7 @@ export function TelaPrincipal({ navigation }) {
           style={styles.livro}
           onPress={() =>
             navigation.navigate('TelaLivro', {
-              titulo: 'O Lar da Senhorita Peregrine',
+              titulo: 'Skyrim',
             })
           }
         >
@@ -321,7 +321,7 @@ export function TelaPrincipal({ navigation }) {
         >
           <Image style={styles.livroImagem} source={imagemLukov} />
           <View>
-            <Text style={styles.textoLivro}>TÍTULO: Diablo.</Text>
+            <Text style={styles.textoLivro}>TÍTULO: De Lukov, com amor.</Text>
             <Text numberOfLines={8} style={styles.textoSinopse}>
               SINOPSE: Se alguém perguntasse a Jasmine Santos como ela
               descreveria os últimos anos de sua vida em uma única palavra, ela,
@@ -338,6 +338,8 @@ export function TelaPrincipal({ navigation }) {
           onPress={() =>
             navigation.navigate('TelaLivro', {
               titulo: 'De Lukov, com amor',
+              sinopse:
+                'SINOPSE: Se alguém perguntasse a Jasmine Santos como ela descreveria os últimos anos de sua vida em uma única palavra, ela, definitivamente, usaria uma com quatro letras. Depois de dezessete anos e incontáveis promessas e ossos quebrados, ela sabe que as portas para competir na patinação artística estão começando a se fechar.',
             })
           }
         >
